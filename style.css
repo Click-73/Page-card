@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  background-color: #141b1c;
+  width: 100%;
+  height: 100%;
+}
+
+.page {
+  position: absolute;
+  width: 1176px;
+  height: 770px;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  display: flex;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  top: calc(50% - 385px);
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+}
+
+.price-card {
+  width: 380px;
+  height: 770px;
+  background-color: #334247;
+  margin-right: 18px;
+}
+.price-card:last-child {
+  margin-right: 0;
+}
+.price-card__title {
+  text-align: center;
+  margin-top: 33px;
+  font-size: 35px;
+  line-height: 43px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.price-card__subtitle {
+  font-weight: 300;
+  text-align: center;
+  line-height: 24px;
+  font-size: 20px;
+  padding-top: 0;
+  margin-top: 0;
+  margin-bottom: 33px;
+}
+.price-card__price {
+  background-color: #5BB189;
+  height: 105px;
+}
+.price-card__price-second {
+  background-color: #3A6BA5;
+}
+.price-card__price-third {
+  background-color: #EC632A;
+}
+.price-card__price_item {
+  display: inline-block;
+  width: 160px;
+  font-size: 55px;
+  line-height: 67px;
+  text-align: center;
+  font-weight: 700;
+  margin: 19px 110px;
+}
+.price-card__descriptions {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+  margin: 40px 26px;
+}
+.price-card__options-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.price-card__options-list_item {
+  width: 380px;
+  Line-height: 50px;
+  margin-top: 0;
+}
+.price-card__options-list_item:nth-child(odd) {
+  background-color: #2A3438;
+}
+.price-card__options-list_item-img {
+  margin: 0 22px 0;
+  display: inline-block;
+}
+.price-card__options-list_item-text {
+  display: inline-block;
+  margin: 0;
+  text-align: center;
+}
+.price-card__order-btn {
+  color: white;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  background-color: #5BB189;
+  width: 155px;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  margin: 39px 112px 40px 112px;
+}
+.price-card__order-btn-second {
+  background-color: #3A6BA5;
+}
+.price-card__order-btn-third {
+  background-color: #EC632A;
+}
+
+.popular-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.popular {
+  position: absolute;
+  background-color: #DC3F45;
+  width: 147px;
+  height: 25px;
+  transform: rotate(45deg);
+  left: 264px;
+  top: 30px;
+  display: flex;
+}
+.popular__text {
+  text-align: center;
+  color: white;
+  margin: auto;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+/*# sourceMappingURL=style.css.map */
