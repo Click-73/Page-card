@@ -2,7 +2,8 @@
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   background-color: #141b1c;
   max-width: 100%;
   max-height: 100%;
@@ -12,7 +13,7 @@ html, body {
   position: absolute;
   width: 1176px;
   height: 770px;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: #fff;
   display: flex;
   right: 0;
@@ -55,14 +56,14 @@ html, body {
   margin-bottom: 33px;
 }
 .price-card__price {
-  background-color: #5BB189;
+  background-color: #5bb189;
   height: 105px;
 }
 .price-card__price-second {
-  background-color: #3A6BA5;
+  background-color: #3a6ba5;
 }
 .price-card__price-third {
-  background-color: #EC632A;
+  background-color: #ec632a;
 }
 .price-card__price_item {
   display: inline-block;
@@ -87,11 +88,11 @@ html, body {
 }
 .price-card__options-list_item {
   width: 380px;
-  Line-height: 50px;
+  line-height: 50px;
   margin-top: 0;
 }
 .price-card__options-list_item:nth-child(odd) {
-  background-color: #2A3438;
+  background-color: #2a3438;
 }
 .price-card__options-list_item-img {
   margin: 0 22px 0;
@@ -107,7 +108,7 @@ html, body {
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
-  background-color: #5BB189;
+  background-color: #5bb189;
   width: 155px;
   height: 40px;
   border-radius: 20px;
@@ -115,10 +116,10 @@ html, body {
   margin: 39px 112px 40px 112px;
 }
 .price-card__order-btn-second {
-  background-color: #3A6BA5;
+  background-color: #3a6ba5;
 }
 .price-card__order-btn-third {
-  background-color: #EC632A;
+  background-color: #ec632a;
 }
 
 .popular-card {
@@ -128,7 +129,7 @@ html, body {
 
 .popular {
   position: absolute;
-  background-color: #DC3F45;
+  background-color: #dc3f45;
   width: 147px;
   height: 25px;
   transform: rotate(45deg);
