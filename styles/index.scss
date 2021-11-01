@@ -1,153 +1,163 @@
 @import 'veriables.scss';
-
+@import 'breakpoints.scss';
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
-html, body {
-    background-color: $background-color-main;
-    max-width: 100%;
-    max-height: 100%;
+html,
+body {
+  background-color: $background-color-main;
+  max-width: 100%;
+  max-height: 100%;
 }
-
 
 .page {
-    position: absolute;
+  font-family: 'Montserrat', sans-serif;
+  color: $text-color-white;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  @include for-large-up {
+    display: flex;
     width: 1176px;
     height: 770px;
-    font-family: 'Montserrat', sans-serif;
-    color: $text-color-white;
-    display: flex;
-    right:  0;
-    left: 0;
+    position: absolute;
     margin: 0 auto;
+    right: 0;
+    left: 0;
     top: calc(50% - 385px);
-    display: flex;
     flex-shrink: 0;
+  }
 }
 
 .main {
-    display: flex;
-    flex-direction:row;
+  display: flex;
+  flex-direction: column;
+  @include for-large-up {
+    flex-direction: row;
+  }
 }
 
 .price-card {
-    width: 380px;
-    height: 770px;
-    background-color: $background-color-cards;
+  width: 380px;
+  height: 770px;
+  background-color: $background-color-cards;
+  margin-top: 30px;
+
+  @include for-large-up {
     margin-right: 18px;
-    &:last-child {
-        margin-right: 0;
+    margin-top: 0px;
+  }
+  &:last-child {
+    margin-right: 0; 
+  }
+  &__title {
+    text-align: center;
+    margin-top: 33px;
+    font-size: 35px;
+    line-height: 43px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  &__subtitle {
+    font-weight: 300;
+    text-align: center;
+    line-height: 24px;
+    font-size: 20px;
+    padding-top: 0;
+    margin-top: 0;
+    margin-bottom: 33px;
+  }
+  &__price {
+    background-color: $background-color-first;
+    height: 105px;
+    &-second {
+      background-color: $background-color-second;
     }
-    &__title {
-        text-align: center;
-        margin-top: 33px;
-        font-size: 35px;
-        line-height: 43px;
-        margin-bottom: 0;
-        padding-bottom: 0;
-    }
-    &__subtitle {
-        font-weight: 300;
-        text-align: center;
-        line-height: 24px;
-        font-size: 20px;
-        padding-top: 0;
-        margin-top: 0;
-        margin-bottom: 33px;
-    }
-    &__price {
-        background-color: $background-color-first;
-        height: 105px;
-        &-second {
-            background-color: $background-color-second;
-        }
-        &-third {
-            background-color: $background-color-third;
-        }
-
-        &_item {
-            display: inline-block;
-            width: 160px;
-            font-size: 55px;
-            line-height: 67px;
-            text-align: center;
-            font-weight: 700;
-            margin: 19px 110px;
-        }
-    }
-    &__descriptions {
-        font-weight: 300;
-        font-size: 15px;
-        line-height: 18px;
-        text-align: center;
-        margin: 40px 26px;
+    &-third {
+      background-color: $background-color-third;
     }
 
-    &__options-list {
-        list-style-type: none;
-        padding: 0;
+    &_item {
+      display: inline-block;
+      width: 160px;
+      font-size: 55px;
+      line-height: 67px;
+      text-align: center;
+      font-weight: 700;
+      margin: 19px 110px;
+    }
+  }
+  &__descriptions {
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    margin: 40px 26px;
+  }
+
+  &__options-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    &_item {
+      width: 380px;
+      line-height: 50px;
+      margin-top: 0;
+      &:nth-child(odd) {
+        background-color: $background-color-list;
+      }
+      &-img {
+        margin: 0 22px 0;
+        display: inline-block;
+      }
+      &-text {
+        display: inline-block;
         margin: 0;
-        &_item {
-            width: 380px;
-            Line-height: 50px;
-            margin-top: 0;
-            &:nth-child(odd) {
-                background-color: $background-color-list;
-            }
-            &-img{
-                margin: 0 22px 0;
-                display: inline-block;
-            }
-            &-text {
-                display: inline-block;
-                margin: 0;
-                text-align: center;
-            }
-        }
+        text-align: center;
+      }
     }
-    &__order-btn {
-        color: white;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 17px;
-        background-color: $background-color-first;
-        width: 155px;
-        height: 40px;
-        border-radius: 20px;
-        border: none;
-        margin: 39px 112px 40px 112px;
-        
-        &-second {
-            background-color: $background-color-second;
-        }
-        &-third {
-            background-color: $background-color-third;
-        }
+  }
+  &__order-btn {
+    color: white;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    background-color: $background-color-first;
+    width: 155px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    margin: 39px 112px 40px 112px;
+
+    &-second {
+      background-color: $background-color-second;
     }
-    
+    &-third {
+      background-color: $background-color-third;
+    }
+  }
 }
 
 .popular-card {
-    position: relative;
-    overflow: hidden;
+  position: relative;
+  overflow: hidden;
 }
 .popular {
-    position: absolute;
-    background-color: $color-banner;
-    width: 147px;
-    height: 25px;
-    transform: rotate(45deg);
-    left: 264px;
-    top: 30px;
-    display: flex;
-    &__text {
-        text-align: center;
-        color: white;
-        margin: auto;
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 17px;
-
-    }
+  position: absolute;
+  background-color: $color-banner;
+  width: 147px;
+  height: 25px;
+  transform: rotate(45deg);
+  left: 264px;
+  top: 30px;
+  display: flex;
+  &__text {
+    text-align: center;
+    color: white;
+    margin: auto;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+  }
 }

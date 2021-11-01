@@ -10,30 +10,47 @@ body {
 }
 
 .page {
-  position: absolute;
-  width: 1176px;
-  height: 770px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: #fff;
   display: flex;
-  right: 0;
-  left: 0;
-  margin: 0 auto;
-  top: calc(50% - 385px);
-  display: flex;
-  flex-shrink: 0;
+  justify-content: center;
+  padding: 0;
+}
+@media screen and (min-width: 1200px) {
+  .page {
+    display: flex;
+    width: 1176px;
+    height: 770px;
+    position: absolute;
+    margin: 0 auto;
+    right: 0;
+    left: 0;
+    top: calc(50% - 385px);
+    flex-shrink: 0;
+  }
 }
 
 .main {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+}
+@media screen and (min-width: 1200px) {
+  .main {
+    flex-direction: row;
+  }
 }
 
 .price-card {
   width: 380px;
   height: 770px;
   background-color: #334247;
-  margin-right: 18px;
+  margin-top: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .price-card {
+    margin-right: 18px;
+    margin-top: 0px;
+  }
 }
 .price-card:last-child {
   margin-right: 0;
@@ -56,14 +73,14 @@ body {
   margin-bottom: 33px;
 }
 .price-card__price {
-  background-color: #5bb189;
+  background-color: #5BB189;
   height: 105px;
 }
 .price-card__price-second {
-  background-color: #3a6ba5;
+  background-color: #3A6BA5;
 }
 .price-card__price-third {
-  background-color: #ec632a;
+  background-color: #EC632A;
 }
 .price-card__price_item {
   display: inline-block;
@@ -92,7 +109,7 @@ body {
   margin-top: 0;
 }
 .price-card__options-list_item:nth-child(odd) {
-  background-color: #2a3438;
+  background-color: #2A3438;
 }
 .price-card__options-list_item-img {
   margin: 0 22px 0;
@@ -108,7 +125,7 @@ body {
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
-  background-color: #5bb189;
+  background-color: #5BB189;
   width: 155px;
   height: 40px;
   border-radius: 20px;
@@ -116,10 +133,10 @@ body {
   margin: 39px 112px 40px 112px;
 }
 .price-card__order-btn-second {
-  background-color: #3a6ba5;
+  background-color: #3A6BA5;
 }
 .price-card__order-btn-third {
-  background-color: #ec632a;
+  background-color: #EC632A;
 }
 
 .popular-card {
@@ -129,7 +146,7 @@ body {
 
 .popular {
   position: absolute;
-  background-color: #dc3f45;
+  background-color: #DC3F45;
   width: 147px;
   height: 25px;
   transform: rotate(45deg);
