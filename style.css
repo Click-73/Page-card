@@ -22,10 +22,10 @@ body {
     width: 1176px;
     height: 770px;
     position: absolute;
-    margin: auto;
+    margin: 0 auto;
     right: 0;
     left: 0;
-    top: calc(50% - 385px);
+    top: calc(50% - 285px);
     flex-shrink: 0;
   }
 }
